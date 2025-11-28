@@ -1,38 +1,105 @@
-.App {
+/*for all body*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  height: 100vh;
+  color: #fff;
+}
+
+/* app container*/
+.app {
+  text-align: center;
+  padding: 40px;
+}
+
+/* title */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* search bar */
+input {
+  padding: 12px;
+  width: 260px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #ffca28;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ffb300;
+}
+
+/*  weather card */
+.weather-card {
+  margin-top: 35px;
+  width: 340px;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* glassmorphism */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  border-radius: 18px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* temp display */
+.temp {
+  font-size: 48px;
+  margin: 5px 0;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* descriptions in the app like "Cloudy" */
+.desc {
+  font-size: 20px;
+  margin-top: -8px;
+  text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* city title */
+.weather-card h2 {
+  font-size: 28px;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+/* for error messages */
+.error {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.extra-info {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+}
+.extra-info p {
+  margin: 6px 0;
 }
